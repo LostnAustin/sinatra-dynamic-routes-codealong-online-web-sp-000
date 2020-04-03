@@ -24,4 +24,9 @@ class App < Sinatra::Base
     # erb :'/goodbye/show.html'
   end
 
+  get '/multiply/:num1/:num2' do
+    @mutiple = params[:num1, :num2]
+    "#{num1}* #{num2}"
+  end
+
 end
