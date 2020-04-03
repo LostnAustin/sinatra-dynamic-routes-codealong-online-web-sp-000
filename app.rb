@@ -18,10 +18,10 @@ class App < Sinatra::Base
 
   # Code your final two routes here:
   get '/goodbye/:name' do
-    @goodbye = all_the_names.select do |name|
+  
       puts "Goodbye, #{name}."
     erb :'/goodbye.show.html'
     end
   end
-  
+
 end
