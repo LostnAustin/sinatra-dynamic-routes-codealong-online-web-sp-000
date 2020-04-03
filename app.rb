@@ -22,5 +22,5 @@ class App < Sinatra::Base
       puts "Goodbye, #{name}."
     erb :'/goodbye.show.html'
   end
-
+end
 end
