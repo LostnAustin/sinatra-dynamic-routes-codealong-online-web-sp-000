@@ -20,7 +20,7 @@ class App < Sinatra::Base
   get '/goodbye/:name' do
 
       puts "Goodbye, #{name}."
-    erb :'/goodbye.show.html'
+    erb :'/goodbye'
   
   end
 
