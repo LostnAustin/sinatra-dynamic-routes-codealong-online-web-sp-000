@@ -23,6 +23,5 @@ class App < Sinatra::Base
     end.first
     erb :'/goodbye/show.html'
   end
-  end
 
 end
