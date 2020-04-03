@@ -21,6 +21,7 @@ class App < Sinatra::Base
     @goodbye = all_the_names.select do |name|
       puts "Goodbye, #{name}."
     erb :'/goodbye.show.html'
+    end
   end
-end
+  
 end
