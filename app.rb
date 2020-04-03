@@ -29,6 +29,7 @@ class App < Sinatra::Base
         # binding.pry
     @a = params[:num1].to_i
     @b = params[:num2].to_i
+    # convert instance variable key values (num1/num2) to integers above, back to string below after multiplication
     @c = @a * @b
     "#{@c}"
 
