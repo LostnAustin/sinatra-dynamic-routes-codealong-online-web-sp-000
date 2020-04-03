@@ -21,7 +21,7 @@ class App < Sinatra::Base
     @goodbye = all_the_names.select do |name|
       name.id == params[:name]
     end.first
-    erb :'./goodbye.show.html'
+    erb :'/goodbye.show.html'
   end
 
 end
