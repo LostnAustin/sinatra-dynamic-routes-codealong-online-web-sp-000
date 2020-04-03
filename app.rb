@@ -20,8 +20,8 @@ class App < Sinatra::Base
   get '/goodbye/:name' do
     @user_name = params[:name]
       puts "Goodbye, #{@user_name}."
-    end.first
-    erb :'/goodbye/show.html'
+    # end.first
+    # erb :'/goodbye/show.html'
   end
 
 end
