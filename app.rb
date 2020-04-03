@@ -22,5 +22,6 @@ class App < Sinatra::Base
       name.id == params[:name]
     end.first
     erb :./medicines.show.html
+  end
 
 end
