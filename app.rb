@@ -20,8 +20,9 @@ class App < Sinatra::Base
   get '/goodbye/:name' do
     @goodbye = all_names.select do |name|
       puts "Goodbye, #{name}."
+    end.first
     erb :'/goodbye/show.html'
-
+  end
   end
 
 end
