@@ -29,7 +29,7 @@ class App < Sinatra::Base
         binding.pry
     @a = params[:num1]
     @b = params[:num2]
-    @a * @b
+    @a.to_i * @b.to_i
 
   end
 
